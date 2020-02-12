@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:300,400,600&display=swap");
+
+:root {
+  --text-color: black;
+  --background-color: #eeeeee;
+  --icon-color: #ffffff;
+  --card-border-color: #17a2b8;
+  --card-header-background-color: #17a2b8;
+  --card-header-text-color: hsl(0, 0%, 100%);
+  --label-color: #6c757d;
+  --navbar-background-color: #ffffff;
+  --btn-logout-background-color: #17a2b8;
+  --alertify-text-color: #ffffff;
+  --alertify-background-color: #17a2b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
+
+label {
+  color: var(--label-color);
+  font-weight: 300;
+}
+
+.card {
+  border-radius: 0;
+  border-color: var(--card-border-color);
+}
+
+.card-header {
+  background-color: var(--card-header-background-color);
+  color: var(--card-header-text-color);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+/*
+  Navbar
+*/
+
+.navbar {
+  background-color: var(--navbar-background-color);
+  height: 60px;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand > img {
+  height: 45px;
+  width: 262px;
+  margin-left: 16px;
+}
+
+.btn-logout {
+  height: 60px;
+  width: 80px;
+  background-color: var(--btn-logout-background-color);
+  color: var(--icon-color) !important;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+/*
+  Alertify
+*/
+
+.ajs-header,
+.ajs-footer,
+.ajs-buttons,
+.ajs-button.ajs-ok {
+  color: var(--alertify-text-color);
+  background-color: var(--alertify-background-color);
+}
